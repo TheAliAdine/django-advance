@@ -12,7 +12,11 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 COPY . core/app/
+=======
+COPY . /app/
+>>>>>>> Stashed changes
 =======
 COPY . /app/
 >>>>>>> Stashed changes

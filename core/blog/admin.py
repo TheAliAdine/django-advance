@@ -1,5 +1,6 @@
 from django.contrib import admin
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from .models import Post, Category
 
 
@@ -14,10 +15,15 @@ class PostAdmin(admin.ModelAdmin):
     ]
 
 =======
+=======
+>>>>>>> Stashed changes
 from .models import Post , Category
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ["author","title","status","category","created_date","published_date"]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 admin.site.register(Post)

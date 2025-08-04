@@ -7,7 +7,11 @@ import sys
 def main():
     """Run administrative tasks."""
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+=======
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
+>>>>>>> Stashed changes
 =======
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 >>>>>>> Stashed changes
@@ -23,7 +27,11 @@ def main():
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 if __name__ == "__main__":
+=======
+if __name__ == '__main__':
+>>>>>>> Stashed changes
 =======
 if __name__ == '__main__':
 >>>>>>> Stashed changes

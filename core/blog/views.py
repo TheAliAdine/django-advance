@@ -4,6 +4,7 @@ from django.views.generic.base import RedirectView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.views.generic.edit import (
     FormView,
     CreateView,
@@ -13,10 +14,14 @@ from django.views.generic.edit import (
 =======
 from django.views.generic.edit import FormView ,CreateView,UpdateView,DeleteView
 >>>>>>> Stashed changes
+=======
+from django.views.generic.edit import FormView ,CreateView,UpdateView,DeleteView
+>>>>>>> Stashed changes
 
 from .models import Post
 from .forms import Postform
 from django.shortcuts import get_object_or_404
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 from django.contrib.auth.mixins import (
     LoginRequiredMixin,
@@ -29,6 +34,8 @@ def index_view(request):
     context = {"name": name}
     return render(request, "index.html", context)
 =======
+=======
+>>>>>>> Stashed changes
 from django.contrib.auth.mixins import LoginRequiredMixin,PermissionRequiredMixin
 
 
@@ -36,6 +43,9 @@ def index_view(request):
     name = 'ali'
     context = {'name':name}
     return render(request,"index.html",context)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -44,6 +54,7 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         context["name"] = "ali"
         context["posts"] = Post.objects.all()
@@ -60,6 +71,8 @@ def redirectmaktab(request):
 class RedirectToMaktab(RedirectView):
     url = "https://maktabkhoneh.org/"
 =======
+=======
+>>>>>>> Stashed changes
         context['name'] = "ali"
         context['posts'] = Post.objects.all()
         return context
@@ -72,6 +85,9 @@ def redirectmaktab(request):
 
 class RedirectToMaktab(RedirectView):
     url = 'https://maktabkhoneh.org/'
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     def get_redirect_url(self, *args, **kwargs):
@@ -79,6 +95,7 @@ class RedirectToMaktab(RedirectView):
         print(post)
         return super().get_redirect_url(*args, **kwargs)
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
 class PostView(PermissionRequiredMixin, LoginRequiredMixin, ListView):
@@ -89,6 +106,8 @@ class PostView(PermissionRequiredMixin, LoginRequiredMixin, ListView):
     paginate_by = 2
     ordering = "-id"
 =======
+=======
+>>>>>>> Stashed changes
 class PostView(PermissionRequiredMixin,LoginRequiredMixin,ListView):
     permission_required = "blog.view_post"
     queryset = Post.objects.all()
@@ -96,12 +115,16 @@ class PostView(PermissionRequiredMixin,LoginRequiredMixin,ListView):
     context_object_name = "posts"
     paginate_by = 2
     ordering = '-id'
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     # def get_queryset(self):
     #     posts = Post.objects.filter(status=True)
     #     return posts
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
 class PostDetailView(DetailView):
@@ -111,11 +134,16 @@ class PostDetailView(DetailView):
 # Create your views here.
 """
 =======
+=======
+>>>>>>> Stashed changes
 class PostDetailView(DetailView):
     model = Post
 
 # Create your views here.
 '''
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 class PostFormView(FormView):
     template_name = "contact.html"
@@ -126,6 +154,7 @@ class PostFormView(FormView):
         form.save()
         return super().form_valid(form)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 """
 
 
@@ -134,11 +163,16 @@ class PostFormView(CreateView):
     fields = ["title", "contact", "status", "category", "published_date"]
     # form_class = Postform
 =======
+=======
+>>>>>>> Stashed changes
 '''
 class PostFormView(CreateView):
     model = Post
     fields = ["title","contact","status","category","published_date"]
     #form_class = Postform
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     success_url = "/blog/post/"
 
@@ -146,8 +180,12 @@ class PostFormView(CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
+=======
+    
+>>>>>>> Stashed changes
 =======
     
 >>>>>>> Stashed changes
@@ -157,10 +195,16 @@ class PostEditView(UpdateView):
     success_url = "/blog/post/"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 class PostDeleteView(DeleteView):
     model = Post
     success_url = "/blog/post/"
+=======
+class PostDeleteView(DeleteView):
+    model = Post
+    success_url = "/blog/post/"
+>>>>>>> Stashed changes
 =======
 class PostDeleteView(DeleteView):
     model = Post

@@ -13,7 +13,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 from decouple import config
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,6 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 SECRET_KEY = config("SECRET_KEY", default="test")
 
 DEBUG = config("DEBUG", cast=bool, default=True)
@@ -35,17 +39,23 @@ ALLOWED_HOSTS = config(
     default="*",
 )
 =======
+=======
+>>>>>>> Stashed changes
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')],default="*")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "django.contrib.admin",
     "django.contrib.auth",
@@ -87,6 +97,8 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
 =======
+=======
+>>>>>>> Stashed changes
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,6 +131,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             ],
         },
@@ -126,7 +141,11 @@ TEMPLATES = [
 ]
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 WSGI_APPLICATION = "core.wsgi.application"
+=======
+WSGI_APPLICATION = 'core.wsgi.application'
+>>>>>>> Stashed changes
 =======
 WSGI_APPLICATION = 'core.wsgi.application'
 >>>>>>> Stashed changes
@@ -137,9 +156,15 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>> Stashed changes
 =======
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -155,6 +180,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
     {
@@ -166,6 +192,8 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
 =======
+=======
+>>>>>>> Stashed changes
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
@@ -176,6 +204,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
 ]
@@ -185,9 +216,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
+=======
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+>>>>>>> Stashed changes
 =======
 LANGUAGE_CODE = 'en-us'
 
@@ -203,6 +240,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "static"
 
@@ -212,6 +250,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 STATICFILES_DIRS = [BASE_DIR / "statics"]
 =======
+=======
+>>>>>>> Stashed changes
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
@@ -222,11 +262,15 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [
     BASE_DIR / "statics"
 ]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
@@ -257,6 +301,11 @@ EMAIL_HOST = "smtp4dev"
 EMAIL_HOST_USER = ""
 EMAIL_HAOT_PASSSWORD = ""
 EMAIL_PORT = 25
+=======
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = "accounts.User"
+>>>>>>> Stashed changes
 =======
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

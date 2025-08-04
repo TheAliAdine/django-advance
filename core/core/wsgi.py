@@ -12,7 +12,11 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+=======
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
+>>>>>>> Stashed changes
 =======
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 >>>>>>> Stashed changes

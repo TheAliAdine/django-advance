@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+version: '3.9'
+>>>>>>> Stashed changes
 =======
 version: '3.9'
 >>>>>>> Stashed changes
@@ -18,6 +22,7 @@ services:
       - SECRET_KEY=test
       - DEBUG=True
     
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   smtp4dev:
     image: rnwood/smtp4dev:v3
@@ -43,6 +48,8 @@ services:
       
 volumes:
   smtp4dev-data:
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       

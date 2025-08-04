@@ -1,5 +1,6 @@
 from django.contrib import admin
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.contrib.auth.admin import UserAdmin
 from .models import User, Profile
 
@@ -22,6 +23,8 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
 =======
+=======
+>>>>>>> Stashed changes
 from django.contrib.auth.admin import UserAdmin  
 from .models import User ,Profile
 class CustomUserAdmin(UserAdmin):
@@ -31,11 +34,15 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         ("Authentication", {"fields": ("email", "password")}),
         ("Permissions", {"fields": ("is_staff", "is_active", "is_superuser")}),
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ("group permissions", {"fields": ("groups", "user_permissions")}),
         ("import date", {"fields": ("last_login",)}),
     )
     add_fieldsets = (
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         (
             None,
@@ -57,6 +64,8 @@ class CustomUserAdmin(UserAdmin):
     ordering = ("email",)
 
 =======
+=======
+>>>>>>> Stashed changes
         (None, {
             "classes": ("wide",),
             "fields": (
@@ -67,6 +76,9 @@ class CustomUserAdmin(UserAdmin):
     )
     search_fields = ("email",)
     ordering = ("email",) 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 admin.site.register(User, CustomUserAdmin)

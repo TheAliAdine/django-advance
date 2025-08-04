@@ -2,6 +2,7 @@
     "cSpell.words": [
         "redirectmaktab"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     ],
     "python.testing.unittestArgs": [
         "-v",
@@ -12,6 +13,9 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true
+=======
+    ]
+>>>>>>> Stashed changes
 =======
     ]
 >>>>>>> Stashed changes

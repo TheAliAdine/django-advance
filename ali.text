@@ -1,8 +1,12 @@
 docker-compose exec backend sh -c "pip insatall python-decouple"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 docker-compose exec backend sh -c "python manage.py startapp accounts"
 # django-admin-persian-fonts               admin-persian     aval az hame
 black .
+=======
+docker-compose exec backend sh -c "python manage.py startapp accounts"
+>>>>>>> Stashed changes
 =======
 docker-compose exec backend sh -c "python manage.py startapp accounts"
 >>>>>>> Stashed changes

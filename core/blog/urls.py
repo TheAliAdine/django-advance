@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.urls import path, include
 from . import views
 from django.views.generic import TemplateView
@@ -29,6 +30,8 @@ urlpatterns = [
     path("api/v1/", include("blog.api.v1.urls")),
 ]
 =======
+=======
+>>>>>>> Stashed changes
 from django.urls import path
 from . import views
 from django.views.generic import TemplateView
@@ -49,5 +52,9 @@ urlpatterns = [
     path("post/<int:pk>/delete/",views.PostDeleteView.as_view(),name="post_delete")
 
 
+<<<<<<< Updated upstream
+]
+>>>>>>> Stashed changes
+=======
 ]
 >>>>>>> Stashed changes

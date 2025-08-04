@@ -9,7 +9,11 @@ class Migration(migrations.Migration):
 
     dependencies = [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         ("accounts", "0001_initial"),
+=======
+        ('accounts', '0001_initial'),
+>>>>>>> Stashed changes
 =======
         ('accounts', '0001_initial'),
 >>>>>>> Stashed changes
@@ -17,6 +21,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             name="Profile",
             fields=[
@@ -46,6 +51,8 @@ class Migration(migrations.Migration):
                     ),
                 ),
 =======
+=======
+>>>>>>> Stashed changes
             name='Profile',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
@@ -56,6 +63,9 @@ class Migration(migrations.Migration):
                 ('created_date', models.DateTimeField(auto_now_add=True)),
                 ('updated_date', models.DateTimeField(auto_now=True)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             ],
         ),
