@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+<<<<<<< Updated upstream
 from django.urls import reverse
 
 
@@ -15,6 +16,20 @@ class Post(models.Model):
     contact = models.TextField()
     status = models.BooleanField()
     category = models.ForeignKey("Category", on_delete=models.SET_NULL, null=True)
+=======
+
+User = get_user_model()
+class Post(models.Model):
+    '''
+    this is a class to define posts for blog app
+    '''
+    author = models.ForeignKey(User,on_delete=models.CASCADE)
+    image = models.ImageField(null=True,blank=True)
+    title = models.CharField(max_length=250)
+    contact = models.TextField()
+    status = models.BooleanField()
+    category = models.ForeignKey('Category',on_delete=models.SET_NULL,null=True)
+>>>>>>> Stashed changes
 
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
@@ -22,6 +37,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+<<<<<<< Updated upstream
 
     def get_snippet(self):
         return self.contact[:10]
@@ -30,11 +46,17 @@ class Post(models.Model):
         return reverse("blog:api-v1:post-detail", kwargs={"pk": self.pk})
 
 
+=======
+    
+>>>>>>> Stashed changes
 class Category(models.Model):
     name = models.CharField(max_length=250)
 
     def __str__(self):
         return self.name
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 # Create your models here.

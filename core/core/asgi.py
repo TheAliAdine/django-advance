@@ -11,6 +11,10 @@ import os
 
 from django.core.asgi import get_asgi_application
 
+<<<<<<< Updated upstream
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+=======
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
+>>>>>>> Stashed changes
 
 application = get_asgi_application()
