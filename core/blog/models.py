@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.urls import reverse
 
 
@@ -20,6 +21,8 @@ class Post(models.Model):
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 User = get_user_model()
 class Post(models.Model):
@@ -33,6 +36,9 @@ class Post(models.Model):
     status = models.BooleanField()
     category = models.ForeignKey('Category',on_delete=models.SET_NULL,null=True)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -43,6 +49,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
@@ -59,6 +66,9 @@ class Post(models.Model):
 =======
     
 >>>>>>> Stashed changes
+=======
+    
+>>>>>>> Stashed changes
 class Category(models.Model):
     name = models.CharField(max_length=250)
 
@@ -66,8 +76,11 @@ class Category(models.Model):
         return self.name
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======

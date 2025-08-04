@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.urls import path, include
 from . import views
 from django.views.generic import TemplateView
@@ -32,6 +33,8 @@ urlpatterns = [
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 from django.urls import path
 from . import views
 from django.views.generic import TemplateView
@@ -53,6 +56,10 @@ urlpatterns = [
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+]
+>>>>>>> Stashed changes
+=======
 ]
 >>>>>>> Stashed changes
 =======

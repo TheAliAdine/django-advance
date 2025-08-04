@@ -3,7 +3,10 @@ from .models import Post
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -14,6 +17,7 @@ class Postform(forms.ModelForm):
         model = Post
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         fields = [
             "title",
             "contact",
@@ -21,6 +25,10 @@ class Postform(forms.ModelForm):
             "category",
             "published_date",
         ]
+=======
+        fields = ["author","title","contact","status","category","published_date"]  
+
+>>>>>>> Stashed changes
 =======
         fields = ["author","title","contact","status","category","published_date"]  
 

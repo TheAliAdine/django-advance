@@ -10,7 +10,11 @@ class Migration(migrations.Migration):
     dependencies = [
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         ("auth", "0012_alter_user_first_name_max_length"),
+=======
+        ('auth', '0012_alter_user_first_name_max_length'),
+>>>>>>> Stashed changes
 =======
         ('auth', '0012_alter_user_first_name_max_length'),
 >>>>>>> Stashed changes
@@ -21,6 +25,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
             name="User",
@@ -79,6 +84,8 @@ class Migration(migrations.Migration):
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             name='User',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
@@ -97,6 +104,9 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

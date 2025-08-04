@@ -16,6 +16,7 @@ Including another URLconf
 """
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 from django.contrib import admin
 from django.urls import path, include
@@ -70,6 +71,8 @@ if settings.DEBUG:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 from django.contrib import admin
 from django.urls import path , include
 from django.conf import settings
@@ -87,6 +90,10 @@ urlpatterns = [
 if settings.DEBUG :
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> Stashed changes
+=======
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 >>>>>>> Stashed changes
 =======

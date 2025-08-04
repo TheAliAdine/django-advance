@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             name="Category",
             fields=[
                 (
@@ -71,6 +72,8 @@ class Migration(migrations.Migration):
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             name='Category',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
@@ -91,6 +94,9 @@ class Migration(migrations.Migration):
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
                 ('category', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='blog.category')),
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
