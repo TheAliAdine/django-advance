@@ -17,13 +17,9 @@ urlpatterns = [
         name="go-to-index",
     ),
     path("post/", views.PostView.as_view(), name="post_view"),
-    path(
-        "post/<int:pk>/", views.PostDetailView.as_view(), name="post_detail"
-    ),
+    path("post/<int:pk>/", views.PostDetailView.as_view(), name="post_detail"),
     path("post/create/", views.PostFormView.as_view(), name="post_contact"),
-    path(
-        "post/<int:pk>/edit/", views.PostEditView.as_view(), name="post_edit"
-    ),
+    path("post/<int:pk>/edit/", views.PostEditView.as_view(), name="post_edit"),
     path(
         "post/<int:pk>/delete/",
         views.PostDeleteView.as_view(),
