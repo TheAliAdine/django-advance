@@ -1,4 +1,4 @@
-name: django project test
+name: Django project test
 
 on:
   push:
@@ -7,14 +7,25 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Run docker-compose
+    - uses: actions/checkout@v4
+
+    - name: Install Docker Compose
+      run: |
+        sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        docker-compose version
+
+    - name: Start containers
       run: docker-compose up -d
 
-    - name: Run tests
-      run: docker exec backend sh -c "flake8 && pytest ."
+    - name: Wait for backend to be ready
+      run: |
+        echo "Waiting for backend to be ready..."
+        sleep 10
+
+    - name: Run tests inside backend container
+      run: docker exec backend sh -c "pip install flake8 pytest && flake8 && pytest /app"
